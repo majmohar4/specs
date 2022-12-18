@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+
+<div class="topnav center"id="myTopnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Specifikacije, ki jih lahko spletna stran dobi od tebe.</h2>
+  <p>Tukaj so specifikacije:</p>
+</div>
+<table>
+  <tr>
+    <th>Ime</th>
+    <th>Vrednost</th>
+  </tr>
+  <tr>
+    <td>Uporabnikov IP naslov</td>
+    <td><script>document.write(getIP());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova lokacija</td>
+    <td><script>document.write(getLocation());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov časovni pas</td>
+    <td><script>document.write(getTimezone());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov ISP</td>
+    <td><script>document.write(getISP());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov koordinati</td>
+    <td><script>document.write(getCoordinates());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov brskalnik</td>
+    <td><script>document.write(getBrowser());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova naprava</td>
+    <td><script>document.write(getDevice());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov jezik</td>
+    <td><script>document.write(getLanguage());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova velikost zaslona</td>
+    <td>Imaš<script>document.write(getScreenSize());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova barvna globina</td>
+    <td><script>document.write(getColorDepth());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova "pixel ratio"</td>
+    <td><script>document.write(getPixelRatio());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova tip povezave</td>
+    <td><script>document.write(getConnectionType());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova hitrost povezave</td>
+    <td><script>document.write(getConnectionSpeed());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova "connection rtt"</td>
+    <td><script>document.write(getConnectionRTT());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova "save data"</td>
+    <td><script>document.write(getSaveData());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova "connection downlink max"</td>
+    <td><script>document.write(getConnectionDownlinkMax());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova "connection on change"</td>
+    <td><script>document.write(getConnnectionOnChange());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova raven baterije</td>
+    <td><script>document.write(getBatteryLevel());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov čas polnjenje baterije</td>
+    <td><script>document.write(getChargingTime());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov čas praznenja baterije</td>
+    <td><script>document.write(getDischargingTime());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikovo število corov</td>
+    <td><script>document.write(getCpuCores());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova (device) velikost RAM-a</td>
+    <td><script>document.write(getDeviceMemory());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova platforma</td>
+    <td><script>document.write(getPlatform());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova "user agent"</td>
+    <td><script>document.write(getUserAgent());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov tip CPU-ja</td>
+    <td><script>document.write(getCCpuType());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova hitrost CPU-ja</td>
+    <td><script>document.write(getCpuSpeed());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov (system) velikost RAM-a</td>
+    <td><script>document.write(getSystemMemory());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov GPU</td>
+    <td><script>document.write(getGpu());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov hitrost GPU-ja</td>
+    <td><script>document.write(getGpuSpeed());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov velikost GPU-ja</td>
+    <td><script>document.write(getGpuMemory());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov napetost GPU-ja</td>
+    <td><script>document.write(getGpuVoltage());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov GPU-driver</td>
+    <td><script>document.write(getGpuDriver());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov čas uporabe</td>
+    <td><script>document.write(getScreenTime());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikovi odprti zavihki</td>
+    <td><script>document.write(getOpenedTabs());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikova odprta okna</td>
+    <td><script>document.write(getOpenedWindows());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikovo zgodovino iskanja</td>
+    <td><script>document.write(getSearchHistory());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikove najbolj gledane spletne strani</td>
+    <td><script>document.write(getMostVisitedSites());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov najbolj obiskane spletne strani</td>
+    <td><script>document.write(getMostVisitedSites());</script></td>
+  </tr>
+  <tr>
+    <td>Uporabnikov GPU</td>
+    <td><script>document.write(getGpu());</script></td>
+  </tr>
+
+
+
+
+
+</body>
+</html>
