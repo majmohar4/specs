@@ -14,14 +14,24 @@ function myFunction() {
     if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
     return OSName;
   }
-  //get ip address
-    function getIP(json) {
-      document.getElementById("ip").innerHTML = json.ip;
+//set var to computer ip and outut as console log
+var computerIP = "http://ip-api.com/json";
+console.log(computerIP);
+//set var to computer ip and outut as console log
+var computerIP = "http://ip-api.com/json";
+console.log(computerIP);
+//get ip
+function getIP() {
+    try {(Socket socket = new Socket()) {
+        socket.connect(new InetSocketAddress("google.com", 80));
+        return socket.getLocalAddress().getHostAddress();
     }
+}
+
     //get location
     function getLocation(json) {
-        document.getElementById("location").innerHTML = json.city + ", " + json.region;
-        }
+        var connectionDownlinkMax = navigator.connection.downlinkMax;
+    }
     //get timezone
     function getTimezone(json) {
         document.getElementById("timezone").innerHTML = json.timezone;
@@ -57,7 +67,8 @@ function myFunction() {
     //get color depth
     function getColorDepth() {
         var colorDepth = screen.colorDepth;
-        document.getElementById("colorDepth").innerHTML = colorDepth;
+        return colorDepth;
+      
         }   
     //get pixel ratio
     function getPixelRatio() {
